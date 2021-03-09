@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,#3E5151 , #DECBA4);
+    
+
+    font-family: 'Redressed', cursive;
+
+    
+}
+
+
+.logo{
+    text-align: center;
+    background-color:#f58b00;
+    padding:10px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size:30px;
+}
+
+.shop-item img{
+    width:200px;
+   
+}
+.shop-container{
+    margin-top: 100px;
+
+}
+.shop-item h2{
+    margin-left: 60px;
+}
+
+.shop-items{
+    display: flex;
+    justify-content: space-around;
+}
+.shop-item-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.shop-item-button{
+    background-color: #2D9CDB;
+    color:white;
+    font-size:15px;
+    padding:10px;
+    border-radius: 5px;
+
+}
+.shop-item-title{
+    color:white;
+    font-size:30px
+}
+.shop-item-price{
+    color:white;
+    font-size:20px;
+}
+.shop-item-button:hover{
+    color:#2D9CDB;
+    background:white;
+    cursor:pointer;
+}
+.cart-container{
+    margin: 50px 150px;
+}
+.cart-container .header{
+    text-align:center;
+    font-size:40px;
+    color:white;
+
+}
+
+.cartrow {
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around;
+}
+.cart-title{
+    font-size:40px;
+    color:aliceblue;
+}
+.cart-price{
+    font-size:40px;
+    color:aliceblue;
+}
+.cart-quantity{
+    font-size:40px;
+    color:aliceblue;
+    
+}
+
+.cart-item-title{
+    color:aliceblue;
+    
+    position: relative;
+bottom: 66px;
+}
+.cart-item-price{
+
+    margin-top: 50px;
+    color: white;
+
+}
+.cart-quantity-input{
+    width:50px;
+    height:30px;
+    border-radius:10px;
+}
+.btn-danger{
+    background-color: rgb(110, 5, 5);
+    color: white;
+    font-size:20px;
+    padding:5px;
+    border-radius:10px;
+}
+.cart-total{
+    display: flex;
+    justify-content: space-around;
+    font-size:30px;
+    color:white;
+}
+
+@media all and (max-width:800px){
+
+    .shop-items{
+        display: flex;
+        flex-direction:column;
+        margin: 20px 300px;
+        
+
+    }
+    
+    .shop-item-details{
+        display: flex;
+        flex-direction:column;
+        margin-top: 20px;
+    }
+
+
+
+
+}
+@media all and (max-width:700px)
+{
+    .shop-items{
+        display: flex;
+        flex-direction:column;
+        margin:0px 100px;
+        
+        
+
+    }
+    .cartrow{
+        font-size: 10px;
+        
+    }
+    .cart-item-title {
+        color: aliceblue;
+        position: relative;
+        bottom: 0px;
+    }
+    .cart-item-price {
+        margin-top: 50px;
+        color: white;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+    
+}
