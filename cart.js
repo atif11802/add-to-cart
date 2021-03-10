@@ -64,11 +64,12 @@ function additemtocart(title,price,imagesrc){
 </div>
 <span class="cart-item-price">${price}</span>
 <div class="cart-quantity">
-    <input class="cart-quantity-input" value="0" onkeyup="updatecarttotal()">
+    <input class="cart-quantity-input" value="1" onkeyup="updatecarttotal()">
     <button class="btn-danger">remove</button>
 </div> `
                
 cartitems.append(cartrow)
 cartrow.innerHTML=cartrowcontents
 cartrow.getElementsByClassName("btn-danger")[0].addEventListener("click", remove)
+    updatecarttotal()
 }
